@@ -18,23 +18,63 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 a{
     color: inherit;
     font-family: inherit;
 }
 
+h1{
+    font-size: 45px;
+    max-width: 60%;
+}
+
+h1,h2,h3,p{
+    line-height: 1.5;
+}
+
+img{
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+}
+
 .btn{
     border: none;
+    display: inline-block;
     margin: 20px 0;
     background-color: #0061FF;
     color: #fff;
     padding: 8px 15px;
+}
+
+section{
+    padding: 50px 0;
+}
+
+.container{
+    margin: 0 auto;
+}
+
+.container.big{
+    width: 70%;
+}
+
+.container.small{
+    width: 60%;
+}
+
+.col-small{
+    width: 30%;
+}
+
+.col-big{
+    width: 70%;
+}
+
+.relative{
+    position: relative;
 }
 
 /*
@@ -44,6 +84,21 @@ header
 header{
     height: 10vh;
     padding: 0 10px;
+    position: fixed;
+    background-color: white;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header img{
+    width: auto;
+}
+
+header.flex, header .flex{
+    justify-content: space-between;
+    align-items: center;
 }
 
 header .sinistra > *, header .destra > *{
@@ -66,4 +121,35 @@ header ul li a:hover::after{
 
 .action a{
     margin-left: 15px;
+}
+
+/*
+main
+*/
+
+main{
+    margin-top: 10vh;
+}
+
+/*
+jumbo
+*/
+
+section.jumbo{
+    background-color: #B4D0E7;
+    padding-bottom: 0;
+    padding-top: 20px;
+}
+
+section.jumbo h1{
+    margin-bottom: 20px;
+}
+
+section.jumbo i{
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+section .relative{
+    top: 50px;
 }
