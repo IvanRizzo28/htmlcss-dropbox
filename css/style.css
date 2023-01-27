@@ -28,7 +28,23 @@ h1{
     max-width: 60%;
 }
 
-h1,h2,h3,p{
+h2{
+    font-size: 28px;
+}
+
+h1,h2{
+    margin-bottom: 20px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+h4{
+    font-size: 18px;
+}
+
+h1,h2,h3,h4,p{
     line-height: 1.5;
 }
 
@@ -36,21 +52,68 @@ img{
     width: 100%;
 }
 
+input{
+    margin-bottom: 40px;
+}
+
+label{
+    font-size: 20px;
+    margin-right: 40px;
+}
+
+hr{
+    width: 30%;
+    margin: 40px 0;
+}
+
 .flex{
     display: flex;
+}
+
+.flex.col3{
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.box{
+    border: 1px solid black;
+}
+
+.box .intestazione{
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(17, 17, 17);
+}
+
+.box .contenuto{
+    padding: 20px;
+}
+
+.col3 .box{
+    width: 31%;
+}
+
+.col1 .box{
+    width: 100%;
 }
 
 .btn{
     border: none;
     display: inline-block;
-    margin: 20px 0;
+    margin: 30px 0;
     background-color: #0061FF;
     color: #fff;
+    text-align: center;
     padding: 8px 15px;
 }
 
+.box .btn{
+    width: 90%;
+    margin: 30px auto;
+}
+
 section{
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 .container{
@@ -69,12 +132,37 @@ section{
     width: 30%;
 }
 
+.col-medium{
+    width: 50%;
+}
+
 .col-big{
     width: 70%;
 }
 
 .relative{
     position: relative;
+}
+
+.margin-bottom-25{
+    margin-bottom: 25px;
+}
+
+.margin-bottom-medium{
+    margin-bottom: 40px;
+}
+
+.link-defoult{
+    text-decoration: underline;
+    color: blue;
+}
+
+.bold{
+    font-weight: 500;
+}
+
+.check{
+    color: #0061FF;
 }
 
 /*
@@ -141,10 +229,6 @@ section.jumbo{
     padding-top: 20px;
 }
 
-section.jumbo h1{
-    margin-bottom: 20px;
-}
-
 section.jumbo i{
     margin-top: 20px;
     font-size: 50px;
@@ -153,3 +237,38 @@ section.jumbo i{
 section .relative{
     top: 50px;
 }
+
+/*
+prima sezione
+*/
+
+.prezzo,.periodo{
+    display: block;
+}
+
+.prezzo{
+    margin: 10px 0;
+}
+
+.periodo{
+    color: gray;
+    font-size: 14px;
+}
+
+.prima-sezione ul{
+    margin-bottom: -20px;
+}
+
+.prima-sezione ul li{
+    margin-bottom: 25px;
+}
+
+.prima-sezione .contenuto.flex{
+    align-items: flex-start;
+}
+
+.box .btn.no-m-top{
+    margin-top: 0;
+    width: 30%;
+}
+
