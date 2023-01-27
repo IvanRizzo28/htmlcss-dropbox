@@ -6,6 +6,8 @@ reset
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 /*
@@ -14,4 +16,54 @@ commom
 
 body{
     font-family: 'Roboto', sans-serif;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    color: inherit;
+    font-family: inherit;
+}
+
+.btn{
+    border: none;
+    margin: 20px 0;
+    background-color: #0061FF;
+    color: #fff;
+    padding: 8px 15px;
+}
+
+/*
+header
+*/
+
+header{
+    height: 10vh;
+    padding: 0 10px;
+}
+
+header .sinistra > *, header .destra > *{
+    margin: 0 15px;
+}
+
+header ul.flex li{
+    margin: 0 15px;
+}
+
+header ul li a{
+    line-height: 10vh;
+}
+
+header ul li a:hover::after{
+    content: '';
+    border: 1px solid black;
+    display: block;
+}
+
+.action a{
+    margin-left: 15px;
 }
