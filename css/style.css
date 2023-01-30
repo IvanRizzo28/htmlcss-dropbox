@@ -33,7 +33,7 @@ h2{
 }
 
 h1,h2{
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 h3{
@@ -50,6 +50,7 @@ h1,h2,h3,h4,p{
 
 img{
     width: 100%;
+    display: block;
 }
 
 input{
@@ -64,6 +65,15 @@ label{
 hr{
     width: 30%;
     margin: 40px 0;
+}
+
+section{
+    padding: 100px 0;
+}
+
+footer{
+    padding: 50px 0;
+    background-color: #000;
 }
 
 .flex{
@@ -113,6 +123,11 @@ hr{
     color: #fff;
     text-align: center;
     padding: 10px 16px;
+    transition: 0.4s;
+}
+
+.btn:hover{
+    opacity: 0.8;
 }
 
 .btn2{
@@ -121,13 +136,15 @@ hr{
     color: #000;
 }
 
+.btn3{
+    background-color: #fff;
+    padding: 10px 30px;
+    color: #000;
+}
+
 .box .btn{
     width: 90%;
     margin: 30px auto;
-}
-
-section{
-    padding: 100px 0;
 }
 
 .container{
@@ -168,6 +185,10 @@ section{
 
 .margin-bottom-medium{
     margin-bottom: 40px;
+}
+
+.margin-destra-small{
+    margin-right: 10px;
 }
 
 .link-defoult{
@@ -253,7 +274,7 @@ section.jumbo i{
 }
 
 section .relative{
-    top: 50px;
+    bottom: -50px;
 }
 
 /*
@@ -308,4 +329,81 @@ terza sezione
 
 .business .box{
     border: none;
+}
+
+/*
+quarta sezione
+*/
+
+.quarta-sezione h2{
+    font-size: 35px;
+}
+
+/*
+quinta sezione
+*/
+
+.quinta-sezione > div{
+    width: calc(100% / 3);
+}
+
+.griglia-1x{
+    background-color: rgb(244, 242, 242);
+    padding: 40px 40px 140px 40px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.griglia-1x .container.big{
+    width: 90%;
+}
+
+.griglia-1x img{
+    width: 80%;
+}
+
+.griglia-1x hr{
+    margin: 25px 0;
+}
+
+.griglia-4x img{
+    width: 100%;
+}
+
+.griglia-4x.flex{
+    flex-wrap: wrap;
+}
+
+.griglia-4x div{
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+sesta sezione
+*/
+
+.sesta-sezione{
+    background-color: #B4D0E7;
+}
+
+.sesta-sezione h2{
+    font-size: 35px;
+}
+
+/*
+domande frequenti
+*/
+
+.domande .container.small > div{
+    border-bottom: 1px solid black;
+    padding: 30px 10px 30px 0;
+}
+
+.domande span{
+    font-weight: bold;
 }
