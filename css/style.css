@@ -24,12 +24,12 @@ a{
 }
 
 h1{
-    font-size: 45px;
+    font-size: 60px;
     max-width: 60%;
 }
 
 h2{
-    font-size: 28px;
+    font-size: 30px;
 }
 
 h1,h2{
@@ -152,11 +152,11 @@ footer{
 }
 
 .container.big{
-    width: 70%;
+    width: 1200px;
 }
 
 .container.small{
-    width: 60%;
+    width: 900px;
 }
 
 .col-small{
@@ -268,9 +268,15 @@ section.jumbo{
     padding-top: 20px;
 }
 
+section.jumbo .container{
+    position: relative;
+}
+
 section.jumbo i{
-    margin-top: 20px;
     font-size: 50px;
+    position: absolute;
+    bottom: 60px;
+    left: 0;
 }
 
 section .relative{
@@ -343,8 +349,13 @@ quarta sezione
 quinta sezione
 */
 
+section.quinta-sezione{
+    padding: 0;
+}
+
 .quinta-sezione > div{
     width: calc(100% / 3);
+    height: calc(100vw / 3);
 }
 
 .griglia-1x{
@@ -352,6 +363,7 @@ quinta sezione
     padding: 40px 40px 140px 40px;
     justify-content: center;
     align-items: flex-start;
+    overflow-y: auto;
 }
 
 .griglia-1x .container.big{
@@ -359,7 +371,7 @@ quinta sezione
 }
 
 .griglia-1x img{
-    width: 80%;
+    width: 60%;
 }
 
 .griglia-1x hr{
@@ -367,7 +379,8 @@ quinta sezione
 }
 
 .griglia-4x img{
-    width: 100%;
+    width: 50%;
+    filter: invert(1);
 }
 
 .griglia-4x.flex{
@@ -381,6 +394,41 @@ quinta sezione
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* colori/bordi immagini */
+
+.img1{
+    border: 15px solid #D1E9CD;
+    background-color: #A2D39B;
+}
+
+.img2{
+    background-color: #61082B;
+}
+
+.img3{
+    background-color: #0093CE;
+}
+
+.img4{
+    background-color: #FF1C1C;
+}
+
+.img5{
+    background-color: #D5001F;
+}
+
+.img6{
+    background-color: #B4D0E7;
+}
+
+.img7{
+    background-color: #0D2481;
+}
+
+.img8{
+    background-color: #FFD830;
 }
 
 /*
@@ -404,6 +452,39 @@ domande frequenti
     padding: 30px 10px 30px 0;
 }
 
-.domande span{
+.testo span{
     font-weight: bold;
+    font-size: 18px;
+    width: 80%;
 }
+
+.border-top{
+    border-top: 1px solid black;
+}
+
+.domande .container.small > div:hover .paragrafo{
+    padding: 20px 0 5px 0;
+    display: block;
+}
+
+.domande .container.small > div:hover .testo::after{
+    content: '\25B2';
+}
+
+.testo{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testo::after{
+    content: '\25BC';
+    font-size: 18px;
+}
+
+.paragrafo{
+    display: none;
+}
+
+/*
+footer
+*/
