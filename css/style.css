@@ -157,11 +157,11 @@ footer{
 }
 
 .container.big{
-    width: 1200px;
+    max-width: 1200px;
 }
 
 .container.small{
-    width: 900px;
+    max-width: 900px;
 }
 
 .col-small{
